@@ -4,7 +4,7 @@ import Card from '../UI/Card';
 import Progress from '../UI/Progress';
 
 /* URL para realizar la petición GET */
-const newsUrl = 'http://api.mediastack.com/v1/news?access_key=9c852e6a4f5bd1563d6ee5c1de8b386f&countries=mx';
+const newsUrl = 'https://newsapi.org/v2/top-headlines?country=mx&category=technology&apiKey=159a82fe42a4469abdd2b1b1272f4c9e';
 
 class News extends Component{
 
@@ -24,22 +24,19 @@ class News extends Component{
                 /* 
                     Si se completa la petición se destructuran la información para usar solo la requerida 
                 */
-                console.log('Data', response.data.data);
-                const news = response.data.data;
-                const modNews = news.map( (modNew) => {
-                    return{ 
-                            title: modNew.title,
-                            author: modNew.author,
-                            description: modNew.description, 
-                            date: modNew.published_at, 
-                            urlImage: modNew.image,
-                            url: modNew.url
-                        }
-                });
+                    const news = response.data.articles;
+                    const modNews = news.map( (modNew) => {
+                        return{ 
+                                title: modNew.title,
+                                author: modNew.author,
+                                description: modNew.description, 
+                                date: modNew.publishedAt, 
+                                urlImage: modNew.urlToImage,
+                                url: modNew.url
+                            }
+                    });
                 /* Guarda los nuevos datos en 'data' */
                 this.setState({ data: modNews, error: null});
-                console.log('Mod News', this.state.data);
-
             })
             .catch( error => {
                 /* 
@@ -92,11 +89,7 @@ class News extends Component{
             return this.renderSuccess()
         }else{
             return <Progress></Progress>
-        }
-        /* return(
-            <div>Hello World</div>
-        ); */
-        
+        }   
     }
 }
 
