@@ -15,4 +15,4 @@ En el navegador se despliega el resultado.
 
 ![Visualización en navegador](https://raw.githubusercontent.com/Davidtrejo590/news/master/img/noticias.PNG)
 
-![Visualización en navegador](https://raw.githubusercontent.com/Davidtrejo590/news/master/img/noticias1.PNG)
+![Visualización en navegador](https://raw.githubusercontent.com/Davidtrejo590/news/master/img/noticias_1.PNG)
