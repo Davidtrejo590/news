@@ -8,3 +8,11 @@ Abrir una Terminal dentro de la carpeta 'news' y ejecutar el comando 'npm instal
 ![Repositorio en VSCode](https://raw.githubusercontent.com/Davidtrejo590/news/master/img/npm_install.PNG)
 
 Si no existen errores de instalación ejecutar el comando 'npm start' para iniciar un servidor local de desarrollo y ver en el navegador.
+
+![npm start](https://raw.githubusercontent.com/Davidtrejo590/news/master/img/npm_start.PNG)
+
+En el navegador se despliega el resultado.
+
+![Visualización en navegador](https://raw.githubusercontent.com/Davidtrejo590/news/master/img/noticias.PNG)
+
+![Visualización en navegador](https://raw.githubusercontent.com/Davidtrejo590/news/master/img/noticias1.PNG)
