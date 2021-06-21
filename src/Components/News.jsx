@@ -4,7 +4,7 @@ import Card from '../UI/Card';
 import Progress from '../UI/Progress';
 
 /* URL para realizar la petición GET */
-const newsUrl = 'https://newsapi.org/v2/top-headlines?country=mx&category=technology&apiKey=159a82fe42a4469abdd2b1b1272f4c9e';
+const newsUrl = 'https://newsapi.org/v2/top-headlines?country=mx&category=business&apiKey=159a82fe42a4469abdd2b1b1272f4c9e';
 
 class News extends Component{
 
